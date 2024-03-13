@@ -1,0 +1,363 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
+}
+
+ul {
+    list-style: none;
+}
+
+
+body{
+    font-size: 30px;
+    font-family: "Playfair Display", system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 5px;
+    background-color: rgb(82, 115, 176);
+
+}
+
+body h2 {
+    text-decoration: underline;
+}
+
+/* Nav layout */
+
+nav{
+    background-color: rgb(82, 115, 176);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav img {
+    max-width: 60px;
+}
+
+#name {
+    font-display: bold;
+    padding-top: 10px;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#ikon {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+
+#navi {
+    text-align: right;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+#navi li a{
+    font-display: bold;
+    font-family: "Poor Story", system-ui;
+    font-style: normal;
+    color: #e9e0e0;
+    font-weight: 1200;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.vartical-line {
+    border-left: solid 2px #e9e0e0;
+}
+
+#SNS {
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    background-color: rgb(163, 183, 184, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2csscssvh);
+    transition: opacity 0.3s, transform 0.15s;
+    padding: 33px;
+}
+
+#SNS li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.dropdown:hover #SNS {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#SNS li img {
+    vertical-align: bottom;
+    max-height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.now-page {
+    text-decoration: underline;
+    text-decoration-color: rgb(30, 16, 103) ;
+    text-decoration-style:wavy ;
+    text-decoration-thickness: 2px ;
+}
+
+
+
+
+/* Main layout */
+
+main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#top-main {
+    background-image: url(./asset/header/IMG_0995.JPG);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+li{
+    font: bold;
+}
+img{
+    display: inline-block;
+}
+
+article{
+    border-style: solid 3px #dadada;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* index page */
+
+#top-main article {
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 0px;
+    display: block;
+    padding-right: 50px;
+    padding-top: 70px;
+    padding-bottom: 1300px;
+    padding-left: 50px;
+}
+
+#top-main h2,
+#top-main p{
+    color: #e9e0e0;
+    font-size: 60px;
+    text-decoration: none;
+    padding-bottom: 200px;
+}
+#top-main h2 {
+    font-size: 80px;
+}
+
+#top-main h3 {
+    color: #e9e0e0;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+#myname {
+    color: rgb(187, 202, 24);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#top-main ul {
+    display: block;
+    color: #e9e0e0;
+    font-size: 60px;
+    text-decoration: none;
+      
+}
+
+#top-main img {
+    float: left;
+    clear: left;
+    width: 600px;
+}
+
+/* About page */
+.profile {
+    display: flex;
+}
+
+section {
+    margin-left: 30px;
+}
+
+#country{
+    margin-bottom: 10px;
+    background-color: red;
+    text-align: center;
+}
+
+.hobbies{
+    margin-top: 30px;
+    display: flex;
+}
+
+.container {
+    display: block;
+    margin-right: 30px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: rgba(240, 255, 255, 0.329);
+}
+
+.container p {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Conatact page */
+
+.contact-main img {
+    max-width: 200px;
+}
+
+.contact-main ul li{
+    display: flex;
+}
+
+.contact-main ul li p{
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.contact-main ul li a {
+    display: flex;
+    color: #e9e0e0;
+    align-items: center;
+}
+
+.contact-main button {
+    background-color: #dadada;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#button-a a {
+    color: black;
+}
+
+/* Contact Form Aria(Grid) */
+#contact-form {
+    display: grid;
+    grid-template-areas:
+    "name name email email"
+    "phone phone dropdown dropdown"
+    "message message message meesage"
+    "submit submit submit submit";
+    column-gap: 20px;
+    row-gap: 10px;
+    margin: 8px;
+    padding: 16px;
+}
+
+/* Grid Areas for Items (elements) */
+#name-field {
+    grid-area: name;
+}
+#email-field {
+    grid-area: email;
+}
+#phone-field {
+    grid-area: phone;
+}
+#dropdown-field {
+    grid-area: dropdown;
+}
+#message-field {
+    grid-area: message;
+}
+#submit {
+    grid-area: submit;
+}
+
+/* Form Elements(General Styles) */
+#contact-form label,
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form button {
+    margin: 4px;
+    padding: 3px;
+    display: block;
+    width: 100%;
+}
+
+#contact-form label {
+    text-align: left;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select,
+#contact-form textarea {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* Footer Layout */
+footer{
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    height: 100px;
+    background-color: rgb(82, 115, 176);
+    font-display: bold;
+    font-family: "Poor Story", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.horizonal-line {
+    border-bottom: solid 2px white;
+    margin-bottom: 20px; 
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    font-size: 40px;
+}
+
+footer ul li a {
+    color: #e9e0e0;
+    text-decoration: none;
+
+}
