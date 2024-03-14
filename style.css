@@ -1,20 +1,18 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 ul {
     list-style: none;
 }
 
-
-body{
+body {
     font-size: 30px;
     font-family: "Playfair Display", system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 5px;
     background-color: rgb(82, 115, 176);
-
 }
 
 body h2 {
@@ -22,14 +20,14 @@ body h2 {
 }
 
 /* Nav layout */
-
-nav{
+nav {
     background-color: rgb(82, 115, 176);
     padding: 20px;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    overflow: scroll;
 }
 
 nav ul li {
@@ -55,7 +53,6 @@ nav img {
     gap: 10px;
 }
 
-
 #navi {
     text-align: right;
     display: flex;
@@ -63,7 +60,7 @@ nav img {
     gap: 20px;
 }
 
-#navi li a{
+#navi li a {
     font-display: bold;
     font-family: "Poor Story", system-ui;
     font-style: normal;
@@ -108,17 +105,13 @@ nav img {
 
 .now-page {
     text-decoration: underline;
-    text-decoration-color: rgb(30, 16, 103) ;
-    text-decoration-style:wavy ;
-    text-decoration-thickness: 2px ;
+    text-decoration-color: rgb(30, 16, 103);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
 }
 
-
-
-
 /* Main layout */
-
-main{
+main {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
@@ -126,30 +119,30 @@ main{
     background-color: rgba(0, 0, 0, 0);
 }
 
-#top-main {
-    background-image: url(./asset/header/IMG_0995.JPG);
-    background-color: rgba(0, 0, 0, 0);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center;
+li {
+    font-weight: bold;
 }
 
-li{
-    font: bold;
-}
-img{
+img {
     display: inline-block;
 }
 
-article{
+article {
     border-style: solid 3px #dadada;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);
 }
 
-/* index page */
+#top-main {
+    background-image: url(./asset/header/IMG_0995.JPG);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
-#top-main article {
+/* index page */
+#top-main section {
     background-color: rgba(0, 0, 0, 0);
     border: solid 0px;
     display: block;
@@ -160,14 +153,11 @@ article{
 }
 
 #top-main h2,
-#top-main p{
+#top-main p {
     color: #e9e0e0;
     font-size: 60px;
     text-decoration: none;
     padding-bottom: 200px;
-}
-#top-main h2 {
-    font-size: 80px;
 }
 
 #top-main h3 {
@@ -186,31 +176,30 @@ article{
     color: #e9e0e0;
     font-size: 60px;
     text-decoration: none;
-      
 }
 
-#top-main img {
+#giraffe-body {
     float: left;
     clear: left;
-    width: 600px;
+}
+
+#giraffe-head {
+    display: inline;
+    margin-left: 700px;
 }
 
 /* About page */
-.profile {
-    display: flex;
-}
-
 section {
     margin-left: 30px;
 }
 
-#country{
+#country {
     margin-bottom: 10px;
     background-color: red;
     text-align: center;
 }
 
-.hobbies{
+.hobbies {
     margin-top: 30px;
     display: flex;
 }
@@ -230,16 +219,15 @@ section {
 }
 
 /* Conatact page */
-
 .contact-main img {
     max-width: 200px;
 }
 
-.contact-main ul li{
+.contact-main ul li {
     display: flex;
 }
 
-.contact-main ul li p{
+.contact-main ul li p {
     display: flex;
     align-items: center;
     margin: 50px;
@@ -266,10 +254,10 @@ section {
 #contact-form {
     display: grid;
     grid-template-areas:
-    "name name email email"
-    "phone phone dropdown dropdown"
-    "message message message meesage"
-    "submit submit submit submit";
+        "name name email email"
+        "phone phone dropdown dropdown"
+        "message message message meesage"
+        "submit submit submit submit";
     column-gap: 20px;
     row-gap: 10px;
     margin: 8px;
@@ -280,18 +268,23 @@ section {
 #name-field {
     grid-area: name;
 }
+
 #email-field {
     grid-area: email;
 }
+
 #phone-field {
     grid-area: phone;
 }
+
 #dropdown-field {
     grid-area: dropdown;
 }
+
 #message-field {
     grid-area: message;
 }
+
 #submit {
     grid-area: submit;
 }
@@ -320,14 +313,8 @@ section {
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
 /* Footer Layout */
-footer{
+footer {
     font-family: 'Times New Roman', 'Times New Roman', Times, serif;
     margin-top: 10px;
     height: 100px;
@@ -340,7 +327,7 @@ footer{
 
 .horizonal-line {
     border-bottom: solid 2px white;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 footer p {
